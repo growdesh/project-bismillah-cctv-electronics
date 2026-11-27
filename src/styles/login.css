@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Bismillah CCTV & Electronics — Clean Minimal Login Styles
+   ========================================================================== */
+
+.pos-login-page {
+  min-height: 100svh;
+  width: 100%;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(5, 150, 105, 0.08), transparent 45%),
+    #f1f5f9;
+  color: #0f172a;
+  display: grid;
+  place-items: center;
+  padding: 20px 16px;
+  font-family: "Noto Sans Bengali", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.pos-login-card {
+  width: min(410px, 100%);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 20px 44px -24px rgba(15, 23, 42, 0.2);
+  padding: 34px 26px 32px;
+}
+
+@media (min-width: 480px) {
+  .pos-login-card {
+    padding: 38px 34px 36px;
+  }
+}
+
+.pos-login-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.pos-login-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.pos-login-form {
+  display: grid;
+  gap: 18px;
+}
+
+.pos-login-field {
+  display: grid;
+  gap: 7px;
+}
+
+.pos-login-field label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.pos-login-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pos-login-input-icon {
+  position: absolute;
+  left: 14px;
+  color: #64748b;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.pos-login-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 14px 11px 42px;
+  border-radius: 12px;
+  border: 1.5px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 15.5px;
+  font-weight: 600;
+  transition: border-color 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.pos-login-input.has-toggle {
+  padding-right: 48px;
+}
+
+.pos-login-input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.pos-login-input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.14);
+}
+
+.pos-login-input[aria-invalid="true"] {
+  border-color: #e11d48;
+  background: #fff1f2;
+}
+
+.pos-login-toggle-pw {
+  position: absolute;
+  right: 4px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+}
+
+.pos-login-toggle-pw:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.pos-login-error {
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  font-size: 13.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pos-login-submit {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 4px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: #059669;
+  color: #ffffff;
+  font-size: 15.5px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 10px 22px -10px rgba(5, 150, 105, 0.6);
+  transition: background-color 0.16s ease, transform 0.15s ease;
+}
+
+.pos-login-submit:hover {
+  background: #047857;
+  transform: translateY(-1px);
+}
+
+.pos-login-submit:active {
+  transform: translateY(0);
+}
+
+.pos-login-submit:focus-visible,
+.pos-login-toggle-pw:focus-visible,
+.pos-pwa-install-btn:focus-visible {
+  outline: 3px solid #0b5cff;
+  outline-offset: 2px;
+}
+
+.pos-pwa-install-btn {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 14.5px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.16s ease, border-color 0.16s ease;
+}
+
+.pos-pwa-install-btn:hover {
+  background: #d1fae5;
+  border-color: #059669;
+}
